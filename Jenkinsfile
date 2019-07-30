@@ -1,7 +1,7 @@
 pipeline {
     agent none
     stages {
-        stages('Deploy') {
+        stage('Deploy') {
             steps {
                 echo "deploying now"
                 sh "./deploy.sh"
